@@ -9,6 +9,7 @@ return (
 <h1>{this.props.text}</h1>
 
 <form >
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <label>
           Name of the organizer:
           <input type="text"/>
@@ -37,7 +38,7 @@ return (
       </form>
 
 
-<button onClick={this.props.closePopup}>Create event</button>
+<button class="btn btn-success" onClick={this.props.closePopup}>Create event</button>
 </div>
 </div>
 );

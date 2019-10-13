@@ -17,7 +17,7 @@ const SingleCausePage = () => {
             backgroundRepeat: 'no-repeat',
             align: 'center'
         }}>
-        <button onClick={() => setPopup(true)}> Click To Create Event</button>
+        <button class="btn btn-success" onClick={() => setPopup(true)}> Click To Create Event</button>
 
 { popup === true ?
 <Popup
