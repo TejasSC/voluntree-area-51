@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SingleCausePage.css';
 import Popup from '../components/Popup';
+import MapController from '../components/MapController';
 
 
 
@@ -25,6 +26,7 @@ const SingleCausePage = () => {
 />
 : null
 }
+<MapController />
         </div>
     );
 };
