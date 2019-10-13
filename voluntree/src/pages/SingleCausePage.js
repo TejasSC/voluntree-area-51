@@ -10,7 +10,7 @@ const SingleCausePage = () => {
     const [popup, setPopup] = useState(false);
 
     return (
-        <div style={{
+        <div class='hate' style={{
             background: 'url(' + backgroundImageSrc + ')',
             height:'100vh',
             backgroundSize: 'cover',
