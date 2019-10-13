@@ -11,15 +11,16 @@ const SingleCausePage = () => {
     const [popup, setPopup] = useState(false);
 
     return (
-        <div style={{
+        <div class='hate' style={{
             background: 'url(' + backgroundImageSrc + ')',
             height:'100vh',
             backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            align: 'center'
         }}>
-        <button onClick={() => setPopup(true)}> Click To Launch Popup</button>
+        <button class="btn btn-success" onClick={() => setPopup(true)}> Click To Create Event</button>
 
-{ popup == true ?
+{ popup === true ?
 <Popup
           //text='Click "Close Button" to hide popup'
           closePopup={() => setPopup(false)}
