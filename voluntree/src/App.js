@@ -1,11 +1,26 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import CausesPage from './pages/CausesPage'
+import CausesPage from './pages/CausesPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from "react-bootstrap";
+import LandingPage from "./pages/LandingPage";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
-function App() {
+const App= () => {
+    const [page, setPage] = useState("LandingPage");
+
+    const Page = ({page}) => {
+        switch (page) {
+            case 'LandingPage':
+                return <LandingPage onSubmit={() => {setPage("CausesPage")}}/>;
+                break;
+            case 'CausesPage':
+                return <CausesPage/>;
+                break;
+            default:
+                return <LandingPage onSubmit={() => {setPage("CausesPage")}}/>
+        }
+    }
 
     return (
         <div style={{
@@ -14,9 +29,9 @@ function App() {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
         }}>
-            <CausesPage/>
+            <Page page={page}/>
         </div>
     );
-}
+};
 
 export default App;

@@ -1,7 +1,7 @@
-import {Container, Form} from "react-bootstrap";
+import {Container, Form, Button} from "react-bootstrap";
 import React from 'react';
 
-const LandingPage = () => {
+const LandingPage = (props) => {
     const backgroundImageSrc1 = "/res/forest-background.jpg";
     const backgroundImageSrc2 = "/res/forest-helicopter.jpg";
 
@@ -19,12 +19,16 @@ const LandingPage = () => {
                 transform: 'translate(-50%, -50%)'
             }}>
                 <div>
-                    <Form.Control size="lg" type="text" placeholder="Postcode"/>
+                    <Form onSubmit={props.onSubmit}>
+                        <Form.Control size="lg" type="text" placeholder="Postcode"/>
+                    </Form>
                     <br/>
                 </div>
             </Container>
         </div>
     );
 };
+
+
 
 export default LandingPage;
