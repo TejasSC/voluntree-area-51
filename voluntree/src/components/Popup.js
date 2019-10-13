@@ -13,27 +13,27 @@ return (
           Name of the organizer:
           <input type="text"/>
         </label>
-
+<br/>
         <label>
           Cause of the event:
           <input type="text"/>
         </label>
-
+<br/>
         <label>
           Name of the event:
-          <input type="text"  />
+          <input type="text"/>
         </label>
-
+<br/>
         <label>
           Location of the event:
-          <input type="text"  />
+          <input type="text"/>
         </label>
-
+<br/>
         <label>
           Date and time of the event:
-          <input type="text"  />
+          <input type="text"/>
         </label>
-
+<br/>
       </form>
 
 

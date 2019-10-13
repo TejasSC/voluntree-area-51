@@ -18,7 +18,7 @@ const SingleCausePage = () => {
         }}>
         <button onClick={() => setPopup(true)}> Click To Launch Popup</button>
 
-{ popup == true ?
+{ popup === true ?
 <Popup
           //text='Click "Close Button" to hide popup'
           closePopup={() => setPopup(false)}
