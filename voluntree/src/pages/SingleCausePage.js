@@ -14,9 +14,10 @@ const SingleCausePage = () => {
             background: 'url(' + backgroundImageSrc + ')',
             height:'100vh',
             backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            align: 'center'
         }}>
-        <button onClick={() => setPopup(true)}> Click To Launch Popup</button>
+        <button onClick={() => setPopup(true)}> Click To Create Event</button>
 
 { popup === true ?
 <Popup
