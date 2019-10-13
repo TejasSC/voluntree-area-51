@@ -3,7 +3,7 @@ import React from 'react';
 
 const LandingPage = (props) => {
     const backgroundImageSrc1 = "/res/forest-background.jpg";
-    const backgroundImageSrc2 = "/res/forest-helicopter.jpg";
+    const backgroundImageSrc2 = "/res/planet-bckg.jpg";
 
     return (
         <div style={{
